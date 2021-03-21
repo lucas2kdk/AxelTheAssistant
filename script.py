@@ -5,12 +5,6 @@ import speech_recognition as sr
 from gtts import gTTS
 import glob
 
-
-### Program Init ###
-
-for filepath in glob.iglob(r'commands\*.py'):
-    print(filepath)
-
 ### Standard Settings ###
 programActive = True
 microphoneMuted = False
