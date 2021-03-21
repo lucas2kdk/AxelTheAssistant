@@ -1,2 +1,2 @@
-def test():
-    print("Test Completed!")
+def Test():
+    print("Test")

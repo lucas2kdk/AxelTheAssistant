@@ -3,7 +3,6 @@ import time
 import playsound
 import speech_recognition as sr
 from gtts import gTTS
-import glob
 
 ### Standard Settings ###
 programActive = True
@@ -36,7 +35,8 @@ def Listener():
 
 			text = get_audio()
 
-			if "hello" in text:
-				speak("hello, how are you?")
-			elif "what is your name" in text:
-				speak("My name is Axel")
+			elif "test script" in text:
+				from Commands import test
+				test.Test()
+
+Listener()
