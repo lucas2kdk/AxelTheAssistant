@@ -2,7 +2,7 @@ import os
 import time
 import playsound
 import speech_recognition as sr
-from gtts import gTTS
+from gtts import gTTS 
 
 ### Standard Settings ###
 programActive = True
@@ -35,8 +35,8 @@ def Listener():
 
 			text = get_audio()
 
-			elif "test script" in text:
-				from Commands import test
-				test.Test()
+			if "show notification" in text:
+				from Commands import notifications
+				notifications.TestNotification()
 
 Listener()
